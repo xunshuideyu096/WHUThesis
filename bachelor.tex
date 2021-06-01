@@ -8,8 +8,7 @@
 \usepackage{gbt7714}          %GBT7714-2005无法识别网页，故采用https://github.com/CTeX-org/gbt7714-bibtex-style提供的.bst文件，需要调用宏包gbt7714，2021/2/26 Lihao Cui
 \bibliographystyle{gbt7714-numerical}        % 此参考文献格式在BIBbase中，需要将.bst文件放入到本地texmf目录中，参考https://github.com/Haixing-Hu/GBT7714-2005-BibTeX-Style，2020/12/10 Lihao Cui%使用"t" change.case$ 'lastname :=  将作者姓名改为Cui L此种格式，将格式另存后使用cmd命令texhash更新一下，崔立豪，20210329
 %为实现作者Lin Q这种显示效果，可将.bst文件中的#1 'uppercase.name := 改成 #0 'uppercase.name :=，改完后保存再次运行即可，无需重命名文件再次调用，重命名调用可能会出现意料之外的问题，崔立豪，20210330
-%\usepackage[backend=biber,bibstyle=gb7714-2015,gbnamefmt=lowercase]{biblatex}
-%\addbibresource[location=local]{reference-3.26.bib}
+
 \def\degree{${}^{\circ}$} %定义角度°的输入，Lihao Cui
 \usepackage{siunitx} %使用siunitx宏包来表示科学计数法，2021/1/20 Lihao Cui%也可使用\si{\um},\si{\uL}输入μm、μL，2020/3/23,clh;直接输入μ也可行，崔立豪
 \usepackage[version=4]{mhchem} %使用mhchem宏包，来方便化学式的书写，2021/1/21 Lihao Cui
@@ -19,13 +18,10 @@
 \usepackage{float}%强制图片位置
 
 \usepackage{fontspec}%[no-math]
-%\setmathrm{Times New Roman}
-%\newcommand{\tnewroman}{\fontspec{Times New Roman}}
 \setmainfont{Times New Roman}%设置Times New Roman字体
 
 \usepackage{unicode-math}
-%\setmathfont{texgyretermes-math.otf}
-%\setmathfont{STIX2Math.otf}
+
 \setmathfont{TeX Gyre Termes Math}
 %\setmathfont{STIX Two Math}%设置公式字体为接近Times New Roman的字体，崔立豪，20210427
 
